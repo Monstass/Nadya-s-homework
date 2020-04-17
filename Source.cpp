@@ -4,9 +4,9 @@ using std::cout;
 using std::cin;
 using std::endl;
 
-int made_array(int* s, int* t, int num_rep);
-int show_array(int* s, int* t, int num_rep);
-int finding_answer(int* s, int* t, int num_rep);
+void made_array(int* s, int* t, int num_rep);
+void show_array(int* s, int* t, int num_rep);
+void finding_answer(int* s, int* t, int num_rep);
 
 int main()
 {
@@ -28,7 +28,7 @@ int main()
 	return 0;
 }
 
-int made_array(int* s, int* t, int num_rep)
+void made_array(int* s, int* t, int num_rep)
 {
 	for (int i = 0; i < num_rep; i++)
 	{
@@ -37,20 +37,18 @@ int made_array(int* s, int* t, int num_rep)
 		cout << "Enter t: ";
 		cin >> t[i];
 	}
-	return 0;
 }
 
-int show_array(int *s, int *t, int num_rep)
+void show_array(int *s, int *t, int num_rep)
 {
 	cout << "(s, t): ";
 	for (int i = 0; i < num_rep; i++)
 	{
 		cout << "(" << s[i] << ", " << t[i] << "); ";
 	}
-	return 0;
 }
 
-int finding_answer (int *s, int *t, int num_rep)
+void finding_answer (int *s, int *t, int num_rep)
 {	
 	int s_pros = 0, s_minus = 0;
 	for (int i = 0; i < num_rep; i++)
@@ -66,5 +64,4 @@ int finding_answer (int *s, int *t, int num_rep)
 	}
 	cout << endl << "Yes: " << s_pros;
 	cout << endl << "No: " << s_minus;
-	return 0;
 }
