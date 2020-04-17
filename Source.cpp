@@ -64,4 +64,5 @@ void finding_answer(int* s, int* t, int num_rep)
 	}
 	cout << endl << "Yes: " << s_pros;
 	cout << endl << "No: " << s_minus;
+	return 0;
 }
