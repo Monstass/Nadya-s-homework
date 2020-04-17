@@ -48,8 +48,8 @@ void show_array(int *s, int *t, int num_rep)
 	}
 }
 
-void finding_answer (int *s, int *t, int num_rep)
-{	
+void finding_answer(int* s, int* t, int num_rep)
+{
 	int s_pros = 0, s_minus = 0;
 	for (int i = 0; i < num_rep; i++)
 	{
